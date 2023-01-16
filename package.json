@@ -1,0 +1,28 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "title": "Node Express",
+  "description": "Node Express application as Windows Service",
+  "main": "main.js",
+  "bin": "os-service.js",
+  "scripts": {
+    "test": "nodemon . -e js,sql,json && livereload",
+    "build": "pkg ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "os-service": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "pkg": {
+    "outputPath": "dist",
+    "targets": [
+      "win"
+    ]
+  }
+}
